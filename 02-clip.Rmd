@@ -16,7 +16,7 @@ save_default <- './clip_FIA/'
 save_custom <- 'C:/Users/JJGross/Documents/R_projects/FIA_data/clip_FIA/'
 
 ## Specify `save_location <- save_custom` or `save_location <- save_default`
-save_location <- save_custom
+save_location <- save_default
 
 ## Create directory if it doesn't already exist
 if (!dir.exists(save_location)) {dir.create(save_location)}
@@ -90,7 +90,7 @@ load_default <- './download_FIA/'
 ## Alternatively, enter specific custom location:
 load_custom <- 'C:/Users/JJGross/Documents/R_projects/FIA_data/allStates'
 
-load_location <- load_custom
+load_location <- load_default
 #load_location <- load_default
 
 ## Change number of processing cores used, if desired
@@ -582,7 +582,7 @@ plot_attributes_final_graph |>
 ```
 ## Vizualize plots per year
 
-```{r viz-plots-per-year}
+```{r viz-plots-per-year, eval=TRUE, echo=TRUE}
 # Visualize number of plots per subsection per year
 n_plots_per_year <- tpa_plots |>
   sf::st_drop_geometry() |>

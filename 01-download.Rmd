@@ -72,7 +72,7 @@ save_default <- './download_FIA/'
 save_custom <- 'C:/Users/JJGross/Documents/R_projects/FIA_data/allStates'
 
 ## Specify `save_location <- save_custom` or `save_location <- save_default`
-save_location <- save_custom
+save_location <- save_default
 
 ## Create directory if it doesn't already exist
 if (!dir.exists(save_location)) {dir.create(save_location)}
@@ -86,6 +86,10 @@ This is a large amount of data and depending on connection, may take more than a
 Argument `common = TRUE` only imports the most commonly used FIA tables, including all those required for rFIA functions.
 
 ```{r download-full}
+# Change timeout options from default 60 seconds to 1 hour.
+getOption('timeout')
+options(timeout=3600)
+
 ## APPA States
 at_states <- c('CT', 'GA', 'ME', 'MD', 'MA', 
                'NH', 'NJ', 'NY', 'NC', 'PA', 

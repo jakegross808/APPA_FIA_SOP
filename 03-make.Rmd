@@ -17,7 +17,7 @@ load_location_default <- './clip_FIA/'
 ## custom location:
 load_location_custom <- 'C:/Users/JJGross/Documents/R_projects/FIA_data/clip_FIA/' 
 #set variable
-load_location <- load_location_custom
+load_location <- load_location_default
 ```
 
 Load data and set as default argument variables
@@ -45,7 +45,7 @@ save_default <- './summary_data/'
 ## Alternatively, enter specific custom location:
 save_custom <- 'C:/Users/JJGross/Documents/R_projects/FIA_data/summary_data/'
 
-save_location <- save_custom
+save_location <- save_default
 
 ## Create directory if it doesn't already exist
 if (!dir.exists(save_location)) {dir.create(save_location)}
