@@ -1,8 +1,12 @@
 Welcome! 
 
-This is the SOP for (1) downloading data from the Forest Service's FIA database (FIA DataMart) and (2) preparing that data for use in APPA forest health monitoring via implementing functions from the rFIA package. 
+This is the Standard Operating Procedures (SOP) for downloading, querying, and preparing data from the Forest Service's Forest Inventory and Analysis (FIA) database (FIA DataMart) specifically for use in the Appalachian trail (APPA) forest health monitoring. Many of the R functions used in this SOP are from the rFIA package. 
 
-Additional resources:
+## SOP
+
+View the Bookdown [APPA SOP](https://jakegross808.github.io/APPA_FIA_SOP/) created from this repository.
+
+## Additional resources:
 
 The **FIA** landing page: https://www.fs.usda.gov/research/programs/fia
 
