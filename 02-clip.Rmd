@@ -24,10 +24,10 @@ if (!dir.exists(save_location)) {dir.create(save_location)}
 
 ## Load 'Ecoregions' spatial data
 
-Load in a file containing hierarchical spatial categories, or levels, of polygons surrounding the Appalachian National Scenic Trail (more info on how this file was created can be found in APPA Forest Health FIA Narrative). The hierarchical spatial levels (from smallest to largest) include ecological subsections, ecological sections, and provinces (all collectively referred to as ecoregions here). The APPA Ecoregions dataset can be downloaded from IRMA: [APPA_Ecoregions_USFS_HUC10_Shell_AEA](https://irma.nps.gov/DataStore/Reference/Profile/2259589)
+Load in a file containing hierarchical spatial categories, or levels, of polygons surrounding the Appalachian National Scenic Trail (more info on how this file was created can be found in APPA Forest Health FIA Narrative). The hierarchical spatial levels (from smallest to largest) include ecological subsections, ecological sections, and provinces (all collectively referred to as ecoregions here). The APPA Ecoregions dataset can be downloaded from IRMA: [APPA_Ecoregions_USFS_HUC10_Shell_AEA](https://irma.nps.gov/DataStore/Reference/Profile/2300911)
 
 ```{r load-eco-path, eval=TRUE, class.source=".user-input"}
-load_eco_path <- "C:/Users/JJGross/Downloads/APPA_Ecoregions_USFS_HUC10_Shell_AEA"
+load_eco_path <- "move_to_server/APPA_Ecoregions_USFS_HUC10_Shell_AEA"
 ```
 
 Read the shapefile using `read_sf()` from the `sf` (simple features) package.
