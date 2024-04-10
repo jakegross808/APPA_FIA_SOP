@@ -4,7 +4,7 @@ This is the Standard Operating Procedures (SOP) for downloading, querying, and p
 
 ## SOP
 
-View the Bookdown [APPA SOP](https://jakegross808.github.io/APPA_FIA_SOP/) created from this repository.
+View the Bookdown [APPA SOP](https://jakegross808.github.io/APPA_FIA_SOP/) created from the Rmarkdown files within this repository.
 
 ## Additional resources:
 
