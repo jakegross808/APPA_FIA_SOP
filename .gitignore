@@ -2,9 +2,10 @@
 .Rhistory
 .RData
 .Ruserdata
+
 # folders
-_book/
-_main_files/
-clip_FIA/
-download_FIA/
-summary_data/
+/_book
+/_main_files
+/clip_FIA/
+/download_FIA/
+/summary_data/
